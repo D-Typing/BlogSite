@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
-<h1>{{ site.title }}</h1>
-<p>{{ site.description }}</p>
+<header>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</header>
 
-<h2>Posts</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<main>
+  {{ content }}
+
+  <h2>Posts</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</main>
 
 </body>
 </html>
