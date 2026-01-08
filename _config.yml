@@ -1,0 +1,9 @@
+title: "Your Cybersecurity Blog"
+description: "Technical writeups and research"
+
+url: "https://d-typing.github.io"
+baseurl: "/BlogSite"
+
+theme: minima
+markdown: kramdown
+highlighter: rouge
