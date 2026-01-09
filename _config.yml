@@ -7,3 +7,13 @@ baseurl: "/BlogSite"
 theme: minima
 markdown: kramdown
 highlighter: rouge
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+  writeups:
+    output: true
+    layout: writeup
+    permalink: /writeups/:name/
